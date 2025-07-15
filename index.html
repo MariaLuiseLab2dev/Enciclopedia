@@ -2,264 +2,351 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enciclopédia HTML - Elementos Básicos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enciclopédia HTML e CSS - Elementos Básicos</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <h1>📚 Enciclopédia HTML - Elementos Básicos</h1>
+    <h1>📚 Enciclopédia HTML</h1>
+    <main>
+        <h2>Elementos HTML</h2>
+        <div class="elemento">
+            <div class="nome-elemento">&lt;a&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;a&gt; (ou elemento âncora), com seu atributo href, cria um hiperlink para páginas da
+                Web, arquivos,
+                endereços de e-mail, locais na mesma página ou qualquer outra coisa que um URL possa endereçar.
+                O conteúdo de cada um deve indicar o destino do link.
+            </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;div&gt;</div>
-        <div class="descricao">
-            O elemento &lt;div&gt; é um contêiner genérico que agrupa outros elementos HTML. É muito usado para
-            organizar e estruturar o conteúdo da página.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS para estilização</li>
-                <li><strong>id:</strong> Define um identificador único para o elemento</li>
-                <li><strong>style:</strong> Aplica estilos CSS diretamente no elemento</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para agrupar elementos relacionados, criar seções na página ou quando precisar aplicar estilos CSS a
-                um grupo de elementos.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;div class="container"&gt;<br>
-            &nbsp;&nbsp;&lt;h2&gt;Título da Seção&lt;/h2&gt;<br>
-            &nbsp;&nbsp;&lt;p&gt;Este é um parágrafo dentro do div.&lt;/p&gt;<br>
-            &lt;/div&gt;</code>
-        </div>
-    </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">href</span> — A URL para a qual o hiperlink aponta.
+                <div class="subdescricao"> Exemplos de esquemas de URL:
+                    <ul>
+                        <li>Números de telefone com URL's <span class="atributo-elemento">tel:</span></li>
+                        <li>Endereços de e-mail com URL's <span class="atributo-elemento">mailto:</span></li>
+                        <li>Mensagens de texto SMS com URL's <span class="atributo-elemento">sms:</span></li>
+                    </ul>
+                </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;h1&gt; até &lt;h6&gt;</div>
-        <div class="descricao">
-            Os elementos de cabeçalho são usados para criar títulos. &lt;h1&gt; é o título mais importante e &lt;h6&gt;
-            é o menos importante.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS</li>
-                <li><strong>id:</strong> Define um identificador único</li>
-                <li><strong>style:</strong> Aplica estilos CSS diretamente</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para criar títulos e subtítulos, organizando o conteúdo em uma hierarquia clara. Sempre comece com
-                &lt;h1&gt; e vá descendo em ordem.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;h1&gt;Título Principal&lt;/h1&gt;<br>
-            &lt;h2&gt;Subtítulo&lt;/h2&gt;<br>
-            &lt;h3&gt;Subtítulo Menor&lt;/h3&gt;</code>
-        </div>
-    </div>
+                <div class="subdescricao"> Outros recursos de URL podem localizar partes específicas:
+                    <ul>
+                        <li>Seções de uma página com fragmentos de documento</li>
+                        <li>Partes de texto específicas com fragmentos de texto</li>
+                        <li>Partes de arquivos de mídia com fragmentos de mídia</li>
+                    </ul>
+                </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;p&gt;</div>
-        <div class="descricao">
-            O elemento &lt;p&gt; é usado para criar parágrafos de texto. É um dos elementos mais básicos e importantes
-            do HTML.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS</li>
-                <li><strong>id:</strong> Define um identificador único</li>
-                <li><strong>style:</strong> Aplica estilos CSS diretamente</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para qualquer bloco de texto, como descrições, explicações, artigos ou qualquer conteúdo textual da
-                página.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;p&gt;Este é um parágrafo de exemplo que mostra como usar o elemento p para organizar texto na página.&lt;/p&gt;</code>
-        </div>
-    </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;a&gt;</div>
-        <div class="descricao">
-            O elemento &lt;a&gt; (anchor/âncora) é usado para criar links que levam para outras páginas, sites ou seções
-            da mesma página.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>href:</strong> Define o destino do link (URL ou âncora)</li>
-                <li><strong>target:</strong> Define onde abrir o link (_blank para nova aba)</li>
-                <li><strong>title:</strong> Texto que aparece quando passa o mouse sobre o link</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para criar navegação entre páginas, links para sites externos, links para seções da mesma página ou
-                para criar botões clicáveis.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;a href="https://www.google.com" target="_blank"&gt;Ir para Google&lt;/a&gt;<br>
-            &lt;a href="#secao1"&gt;Ir para Seção 1&lt;/a&gt;</code>
-        </div>
-    </div>
+                <span class="atributo-elemento">target</span> — Onde exibir o URL vinculado:
+                <div class="subdescricao">
+                    <ul>
+                        <li>_blank: nova aba ou janela</li>
+                        <li>_parent: contexto de navegação pai</li>
+                        <li>_top: contexto de navegação mais alto</li>
+                        <li>_unfencedTop: usado para atravessar além da raiz do quadro cercado</li>
+                    </ul>
+                </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;img&gt;</div>
-        <div class="descricao">
-            O elemento &lt;img&gt; é usado para inserir imagens na página. É um elemento que não precisa de tag de
-            fechamento.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>src:</strong> Define o caminho da imagem (obrigatório)</li>
-                <li><strong>alt:</strong> Texto alternativo para acessibilidade (obrigatório)</li>
-                <li><strong>width:</strong> Define a largura da imagem</li>
-                <li><strong>height:</strong> Define a altura da imagem</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para inserir fotos, ilustrações, ícones ou qualquer tipo de imagem que faça parte do conteúdo da
-                página.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;img src="foto.jpg" alt="Descrição da foto" width="300" height="200"&gt;</code>
-        </div>
-    </div>
+            </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;ul&gt; e &lt;li&gt;</div>
-        <div class="descricao">
-            O &lt;ul&gt; cria uma lista não ordenada (com marcadores) e o &lt;li&gt; define cada item da lista.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS</li>
-                <li><strong>id:</strong> Define um identificador único</li>
-                <li><strong>type:</strong> Define o tipo de marcador (no ul)</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para criar listas de itens que não precisam estar em uma ordem específica, como listas de
-                características ou menus.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;ul&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Primeiro item&lt;/li&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Segundo item&lt;/li&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Terceiro item&lt;/li&gt;<br>
-            &lt;/ul&gt;</code>
-        </div>
-    </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Quando quiser criar um link para outro site, página interna, e-mail ou número de telefone.</p>
+            </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;ol&gt; e &lt;li&gt;</div>
-        <div class="descricao">
-            O &lt;ol&gt; cria uma lista ordenada (com números) e o &lt;li&gt; define cada item da lista.
+            <div class="exemplo">
+                <code>
+                &nbsp;&nbsp;&lt;p&gt;Este é um parágrafo com um &lt;a href="https://www.google.com"&gt;link para o Google&lt;/a&gt;.&lt;/p&gt;
+                </code>
+            </div>
         </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS</li>
-                <li><strong>id:</strong> Define um identificador único</li>
-                <li><strong>start:</strong> Define o número inicial da lista</li>
-                <li><strong>type:</strong> Define o tipo de numeração (1, A, a, I, i)</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para criar listas onde a ordem é importante, como passos de um tutorial, rankings ou instruções
-                sequenciais.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;ol&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Primeiro passo&lt;/li&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Segundo passo&lt;/li&gt;<br>
-            &nbsp;&nbsp;&lt;li&gt;Terceiro passo&lt;/li&gt;<br>
-            &lt;/ol&gt;</code>
-        </div>
-    </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;span&gt;</div>
-        <div class="descricao">
-            O elemento &lt;span&gt; é um contêiner genérico inline usado para aplicar estilos a partes específicas do
-            texto.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>class:</strong> Define uma classe CSS</li>
-                <li><strong>id:</strong> Define um identificador único</li>
-                <li><strong>style:</strong> Aplica estilos CSS diretamente</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para destacar ou estilizar partes específicas do texto dentro de um parágrafo ou outro elemento.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;p&gt;Este texto tem uma &lt;span style="color: red;"&gt;palavra destacada&lt;/span&gt; em vermelho.&lt;/p&gt;</code>
-        </div>
-    </div>
+        <div class="elemento">
+            <div class="nome-elemento">&lt;blockquote&gt;</div>
+            <div class="descricao"> Indica que o texto delimitado é uma citação estendida. Normalmente, isso é
+                renderizado visualmente por recuo.</div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">cite</span>
+                <div class="subdescricao">
+                    Uma URL que designa um documento ou mensagem de origem para as
+                    informações citadas. Este atributo destina-se a apontar para informações que explicam o
+                    contexto ou a referência para a citação.
+                </div>
+            </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;br&gt;</div>
-        <div class="descricao">
-            O elemento &lt;br&gt; cria uma quebra de linha. É um elemento vazio que não precisa de tag de fechamento.
-        </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li>Este elemento não possui atributos específicos, apenas os atributos globais básicos.</li>
-            </ul>
-        </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para forçar uma quebra de linha dentro de um parágrafo, como em endereços ou poemas.</p>
-        </div>
-        <div class="exemplo">
-            <code>&lt;p&gt;Primeira linha&lt;br&gt;<br>
-            Segunda linha&lt;br&gt;<br>
-            Terceira linha&lt;/p&gt;</code>
-        </div>
-    </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Quando quiser criar uma citação.</p>
+            </div>
 
-    <div class="elemento">
-        <div class="nome-elemento">&lt;button&gt;</div>
-        <div class="descricao">
-            O elemento &lt;button&gt; cria um botão clicável que pode executar ações quando clicado.
+            <div class="exemplo">
+                <code>
+                &nbsp;&nbsp;&lt;div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote cite="https://www.huxley.net/bnw/four.html"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Words can be like X-rays, if you use them 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;properly—they’ll go through anything. You 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;read and you’re pierced.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;<br>
+                &nbsp;&nbsp;&lt;/div&gt;
+                </code>
+            </div>
+
         </div>
-        <div class="atributos">
-            <h4>Atributos principais:</h4>
-            <ul>
-                <li><strong>type:</strong> Define o tipo do botão (button, submit, reset)</li>
-                <li><strong>onclick:</strong> Define o que acontece quando o botão é clicado</li>
-                <li><strong>disabled:</strong> Desabilita o botão</li>
-            </ul>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;p&gt;</div>
+            <div class="descricao"> Representa um parágrafo. Os parágrafos geralmente são representados em mídia visual
+                como blocos de texto separados de blocos adjacentes por linhas em branco e/ou recuo de primeira linha,
+                mas os parágrafos HTML podem ser qualquer agrupamento estrutural de conteúdo relacionado, como imagens
+                ou campos de formulário.</div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">style</span>
+                <div class="subdescricao">
+                    Contém declarações de estilo CSS a serem aplicadas ao elemento. Observe que é recomendado que os
+                    estilos sejam definidos em um arquivo ou arquivos separados. Esse atributo e o elemento
+                    &lt;style&gt; têm principalmente a finalidade de permitir um estilo rápido, por exemplo, para fins
+                    de teste.
+                </div>
+
+                <span class="atributo-elemento">id</span>
+                <div class="subdescricao">
+                    Define um identificador (ID) que deve ser exclusivo em todo o documento. O objetivo do atributo ID é
+                    identificar um único elemento ao vincular (usando um identificador de fragmento), script ou estilo
+                    (com CSS).
+                </div>
+
+                <span class="atributo-elemento"> class</span>
+                <div class="subdescricao">
+                    Uma lista separada por espaços das classes do elemento. As classes permitem que CSS e JavaScript
+                    selecionem e acessem elementos específicos por meio dos seletores de classe ou funções como o método
+                    Document.getElementsByClassName().
+                </div>
+            </div>
+
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Quando quiser criar um link para outro site, página interna, e-mail ou número de telefone.</p>
+            </div>
+
+            <div class="exemplo">
+                <code>
+                &nbsp;&nbsp;&lt;p&gt;Este é um parágrafo .&lt;/p&gt;
+                </code>
+            </div>
         </div>
-        <div class="quando-usar">
-            <h4>Quando usar:</h4>
-            <p>Use para criar botões que executam ações, como enviar formulários, abrir menus ou executar funções
-                JavaScript.</p>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;img&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;img&gt; representa uma imagem incorporada ao documento. Ele não possui tag de
+                fechamento e deve indicar a fonte da imagem através do atributo <code>src</code>.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">src</span>
+                <div class="descricao"> URL da imagem a ser exibida.</div>
+                <span class="atributo-elemento">alt</span>
+                <div class="descricao"> Texto alternativo que descreve a imagem para leitores de tela ou quando a imagem
+                    não carrega.</div>
+                <span class="atributo-elemento">width</span>
+                <div class="descricao">Largura da imagem (pixels).</div>
+                <span class="atributo-elemento">height</span>
+                <div class="descricao"> Altura da imagem (pixels).</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Quando quiser inserir uma imagem fixa ou decorativa em seu conteúdo.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;img src="paisagem.jpg" alt="Montanhas ao amanhecer" width="600" height="400"&gt;
+        </code>
+            </div>
         </div>
-        <div class="exemplo">
-            <code>&lt;button type="button" onclick="alert('Botão clicado!')"&gt;Clique aqui&lt;/button&gt;</code>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;ul&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;ul&gt; cria uma lista não ordenada. Seus itens são definidos com &lt;li&gt; e
+                geralmente exibidos com marcadores.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">type</span>
+                <div class="descricao">(legado) Define o estilo do marcador (círculo, quadrado, etc.).</div>
+                <span class="atributo-elemento">compact</span>
+                <div class="descricao">(obsoleto) Indicava apresentação mais compacta da lista.</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Quando quiser agrupar itens em uma lista sem impor uma ordem numérica.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;/ul&gt;
+        </code>
+            </div>
         </div>
-    </div>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;li&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;li&gt; define um item dentro de listas ordenadas (&lt;ol&gt;), não ordenadas
+                (&lt;ul&gt;) ou de descrição (&lt;menu&gt;).
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">value</span>
+                <div class="descricao">(em ol) Define o valor inicial de numeração para o item.</div>
+                <span class="atributo-elemento">type</span>
+                <div class="descricao">(em ol legados) Define o estilo de numeração.</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Dentro de &lt;ul&gt;, &lt;ol&gt; ou &lt;menu&gt; para listar cada elemento.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;ol&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li value="5"&gt;Item inicial no 5&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 6&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;/ol&gt;
+        </code>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;button&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;button&gt; cria um botão clicável, que pode disparar ações em formulários ou
+                scripts.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">type</span>
+                <div class="descricao">Define o comportamento: <code>button</code> (padrão), <code>submit</code> (envia
+                    formulário), <code>reset</code> (limpa formulário).</div>
+                <span class="atributo-elemento">disabled</span>
+                <div class="descricao">Quando presente, desabilita o botão.</div>
+                <span class="atributo-elemento">name</span>
+                <div class="descricao">Nome do controle de formulário.</div>
+                <span class="atributo-elemento">value</span>
+                <div class="descricao">Valor enviado com o formulário.</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Para acionar ações, enviar ou resetar formulários, ou disparar scripts.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        </code>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;form&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;form&gt; representa uma seção de documento que contém controles interativos para
+                enviar dados ao servidor.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">action</span>
+                <div class="descricao">URL para onde os dados serão enviados.</div>
+                <span class="atributo-elemento">method</span>
+                <div class="descricao">Método HTTP: <code>get</code> ou <code>post</code>.</div>
+                <span class="atributo-elemento">enctype</span>
+                <div class="descricao">Tipo de codificação de dados (ex.: <code>multipart/form-data</code> para upload
+                    de arquivos).</div>
+                <span class="atributo-elemento">target</span>
+                <div class="descricao">Onde exibir a resposta (<code>_self</code>, <code>_blank</code>, etc.).</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Ao precisar coletar e enviar dados do usuário via HTTP.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;form action="/submit" method="post"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="nome"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+            &nbsp;&nbsp;&lt;/form&gt;
+        </code>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;input&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;input&gt; representa um controle de dados, como campo de texto, checkbox, rádio,
+                entre outros.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">type</span>
+                <div class="descricao">Tipo de controle (text, password, checkbox, radio, email, etc.).</div>
+                <span class="atributo-elemento">name</span>
+                <div class="descricao">Nome do controle no envio do formulário.</div>
+                <span class="atributo-elemento">value</span>
+                <div class="descricao">Valor inicial ou selecionado.</div>
+                <span class="atributo-elemento">placeholder</span>
+                <div class="descricao">Texto de dica quando vazio.</div>
+                <span class="atributo-elemento">required</span>
+                <div class="descricao">Indica que o campo é obrigatório.</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Para coletar dados dos usuários em formulários.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;input type="email" name="email" placeholder="seu@exemplo.com" required&gt;
+        </code>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <div class="nome-elemento">&lt;section&gt;</div>
+            <div class="descricao">
+                O elemento HTML &lt;section&gt; representa uma seção genérica de conteúdo, normalmente com um título
+                próprio, usada para agrupar temas relacionados.
+            </div>
+            <div class="atributos">
+                <h4>Atributos principais</h4>
+                <span class="atributo-elemento">id</span>
+                <div class="descricao">Identificador único para navegação ou estilos.</div>
+                <span class="atributo-elemento">class</span>
+                <div class="descricao">Classes para estilização ou seleção via script.</div>
+            </div>
+            <div class="quando-usar">
+                <h4>Quando usar:</h4>
+                <p>Para dividir a página em blocos temáticos, cada um com seu próprio título.</p>
+            </div>
+            <div class="exemplo">
+                <code>
+            &nbsp;&nbsp;&lt;section id="sobre"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sobre Nós&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Texto descritivo...&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/section&gt;
+        </code>
+            </div>
+        </div>
+
+        <h2>Elementos CSS</h2>
+    </main>
 </body>
 
 </html>
