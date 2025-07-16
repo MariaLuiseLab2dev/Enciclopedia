@@ -59,6 +59,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: var(--cor-fundo);
+    font-size: 0.8rem;
 }
 
 nav li:hover {
@@ -98,6 +99,9 @@ h3 {
     margin-bottom: var(--space-s);
 }
 
+p {
+    padding: var(--space-s);
+}
 .elemento {
     background-color: var(--cor-fundo);
     margin: var(--space-s) 0;
@@ -186,4 +190,10 @@ h3 {
 .span-negrito {
     font-weight: bold;
     color: var(--cor-fonte);
+}
+
+@media (min-width:768px) {
+    nav a {
+        font-size: 1rem;
+    }
 }
