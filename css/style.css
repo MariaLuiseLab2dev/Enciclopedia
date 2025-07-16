@@ -94,6 +94,10 @@ h2 {
     margin: var(--space-xg) 0 var(--space-s) 0;
 }
 
+h3 {
+    margin-bottom: var(--space-s);
+}
+
 .elemento {
     background-color: var(--cor-fundo);
     margin: var(--space-s) 0;
