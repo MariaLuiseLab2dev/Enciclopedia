@@ -9,8 +9,20 @@
 </head>
 
 <body>
-    <h1>📚 Enciclopédia HTML</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#html-section">HTML</a></li>
+                <li><a href="#css-section">CSS</a></li>
+                <li><a href="#sinalizador-important">Important</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
+        <h1>Enciclopédia HTML</h1>
+        <section id="html-section">
         <h2>Elementos HTML</h2>
         <div class="elemento">
             <div class="nome-elemento">&lt;a&gt;</div>
@@ -24,7 +36,7 @@
             <div class="atributos">
                 <h4>Atributos principais</h4>
                 <span class="atributo-elemento">href</span> — A URL para a qual o hiperlink aponta.
-                <div class="subdescricao"> Exemplos de esquemas de URL:
+                <div class="descricao"> Exemplos de esquemas de URL:
                     <ul>
                         <li>Números de telefone com URL's <span class="atributo-elemento">tel:</span></li>
                         <li>Endereços de e-mail com URL's <span class="atributo-elemento">mailto:</span></li>
@@ -32,7 +44,7 @@
                     </ul>
                 </div>
 
-                <div class="subdescricao"> Outros recursos de URL podem localizar partes específicas:
+                <div class="descricao"> Outros recursos de URL podem localizar partes específicas:
                     <ul>
                         <li>Seções de uma página com fragmentos de documento</li>
                         <li>Partes de texto específicas com fragmentos de texto</li>
@@ -42,7 +54,7 @@
 
 
                 <span class="atributo-elemento">target</span> — Onde exibir o URL vinculado:
-                <div class="subdescricao">
+                <div class="descricao">
                     <ul>
                         <li>_blank: nova aba ou janela</li>
                         <li>_parent: contexto de navegação pai</li>
@@ -72,7 +84,7 @@
             <div class="atributos">
                 <h4>Atributos principais</h4>
                 <span class="atributo-elemento">cite</span>
-                <div class="subdescricao">
+                <div class="descricao">
                     Uma URL que designa um documento ou mensagem de origem para as
                     informações citadas. Este atributo destina-se a apontar para informações que explicam o
                     contexto ou a referência para a citação.
@@ -90,8 +102,8 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote cite="https://www.huxley.net/bnw/four.html"&gt;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Words can be like X-rays, if you use them 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;properly—they’ll go through anything. You 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;read and you’re pierced.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;properly—they'll go through anything. You 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;read and yo're pierced.<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;<br>
                 &nbsp;&nbsp;&lt;/div&gt;
@@ -109,7 +121,7 @@
             <div class="atributos">
                 <h4>Atributos principais</h4>
                 <span class="atributo-elemento">style</span>
-                <div class="subdescricao">
+                <div class="descricao">
                     Contém declarações de estilo CSS a serem aplicadas ao elemento. Observe que é recomendado que os
                     estilos sejam definidos em um arquivo ou arquivos separados. Esse atributo e o elemento
                     &lt;style&gt; têm principalmente a finalidade de permitir um estilo rápido, por exemplo, para fins
@@ -117,14 +129,14 @@
                 </div>
 
                 <span class="atributo-elemento">id</span>
-                <div class="subdescricao">
+                <div class="descricao">
                     Define um identificador (ID) que deve ser exclusivo em todo o documento. O objetivo do atributo ID é
                     identificar um único elemento ao vincular (usando um identificador de fragmento), script ou estilo
                     (com CSS).
                 </div>
 
                 <span class="atributo-elemento"> class</span>
-                <div class="subdescricao">
+                <div class="descricao">
                     Uma lista separada por espaços das classes do elemento. As classes permitem que CSS e JavaScript
                     selecionem e acessem elementos específicos por meio dos seletores de classe ou funções como o método
                     Document.getElementsByClassName().
@@ -196,7 +208,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
             &nbsp;&nbsp;&lt;/ul&gt;
-        </code>
+            </code>
             </div>
         </div>
 
@@ -219,11 +231,11 @@
             </div>
             <div class="exemplo">
                 <code>
-            &nbsp;&nbsp;&lt;ol&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li value="5"&gt;Item inicial no 5&lt;/li&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 6&lt;/li&gt;<br>
-            &nbsp;&nbsp;&lt;/ol&gt;
-        </code>
+                &nbsp;&nbsp;&lt;ol&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li value="5"&gt;Item inicial no 5&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 6&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;/ol&gt;
+                </code>
             </div>
         </div>
 
@@ -251,8 +263,8 @@
             </div>
             <div class="exemplo">
                 <code>
-            &nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;
-        </code>
+                &nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                </code>
             </div>
         </div>
 
@@ -280,11 +292,11 @@
             </div>
             <div class="exemplo">
                 <code>
-            &nbsp;&nbsp;&lt;form action="/submit" method="post"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="nome"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
-            &nbsp;&nbsp;&lt;/form&gt;
-        </code>
+                &nbsp;&nbsp;&lt;form action="/submit" method="post"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="nome"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                &nbsp;&nbsp;&lt;/form&gt;
+                </code>
             </div>
         </div>
 
@@ -337,16 +349,132 @@
             </div>
             <div class="exemplo">
                 <code>
-            &nbsp;&nbsp;&lt;section id="sobre"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sobre Nós&lt;/h3&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Texto descritivo...&lt;/p&gt;<br>
-            &nbsp;&nbsp;&lt;/section&gt;
-        </code>
+                &nbsp;&nbsp;&lt;section id="sobre"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sobre Nós&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Texto descritivo...&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;/section&gt;
+                </code>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <section id="css-section">
+        <h2>Herança CSS</h2>
+        <div class="elemento">
+            <div class="descricao">
+                <div class="atributos">
+                    <h3>O que é herança em CSS?</h3>
+                    <p>Herança é um mecanismo onde certas propriedades CSS, quando aplicadas a um elemento pai, são
+                        passadas para seus elementos filhos.</p>
+                    <h3>O que é propriedade?</h3>
+                    <p> Propriedade se refere a um dos atributos que definem o estilo de um elemento HTML — como color,
+                        font-size, border.</p>
+                    <p> Cada definição de propriedade do CSS diz se tal propriedade é herdada por padrão ("Inherited":
+                        sim)
+                        ou é não herdada por padrão ("Inherited": não). Isso controla o que ocorre quando nenhum valor é
+                        especificado para uma propriedade em um elemento. </p>
+                    <h3> Propriedades Herdadas Por Padrão</h3>
+                    <p> Quando nenhum valor de uma propriedade herdada foi especificado em um elemento, o elemento obtém
+                        o
+                        valor computado desta propriedade em seu elemento pai.</p>
+                    <p>Como <span class="atributo-elemento">font-family</span>, <span
+                            class="atributo-elemento">text-align</span>, entre outros.</p>
+                </div>
+
+                <div class="quando-usar">
+                    <p><span class="span-negrito">Exemplo:</span></p>
+                    <div class="exemplo">
+                        <code>
+                    &nbsp;p &lbrace;<br>
+                    &nbsp;&nbsp;color: green;<br>
+                    &nbsp;&rbrace;
+                </code>
+                    </div>
+                    <p> E o markup:</p>
+                    <div class="exemplo">
+                        <code>
+                     &nbsp;&nbsp;&lt;p&gt; Este é um parágrafo &lt;em&gt;enfatizado&lt;/em&gt; dentro dele.&lt;/p&gt;
+                    </code>
+                    </div>
+                    <p>As palavras "texto enfatizado" vão aparecer em verde, já que o elemento em herdou o valor da
+                        propriedade color do elemento p. Ele não obtém o valor inicial da propriedade (o qual é a cor
+                        usada
+                        pelo elemento raiz quando a página não especifica nenhuma cor).</p>
+                    <p> <span class="span-negrito">Nota:</span> A palavra-chave <span
+                            class="span-negrito">inherit</span>
+                        permite aos autores especificar explicitamente a herança. Ela funciona tanto em propriedades
+                        herdadas como não herdadas.</p>
+                </div>
+
+                <div class="atributos">
+                <h3> Propriedades não-herdadas </h3>
+                <p> Quando nenhum valor para uma propriedade não herdada é especificado em um elemento, o elemento
+                    obtém o valor inicial desta propriedade.</p>
+                <p> Como <span class="atributo-elemento">margin</span>, <span class="atributo-elemento">padding</span>,
+                    <span class="atributo-elemento">border</span>,
+                    entre outros.</p>
+                </div>
+
+                <div class="quando-usar">
+                    <p><span class="span-negrito">Exemplo:</span></p>
+                    <p> Um exemplo típico de uma propriedade não herdada é a propriedade border. Dadas as seguintes
+                    regras
+                    de estilo:</p>
+                
+                    <div class="exemplo">
+                        <code>
+                        &nbsp;p &lbrace;<br>
+                        &nbsp;&nbsp;border: medium solid;<br>
+                        &nbsp;&rbrace;
+                        </code>
+                    </div>
+                    
+                    <p> E o markup:</p>
+                    <div class="exemplo">
+                        <code>
+                        &nbsp;&nbsp;&lt;p&gt; Este é um parágrafo &lt;em&gt; enfatizado &lt;/em&gt; dentro dele.&lt;/p&gt;
+                        </code>
+                    </div>
+                <p> As palavras "texto enfatizado" não vão ter uma borda (já que o valor inicial de border-style é
+                    none).</p>
             </div>
         </div>
 
-        <h2>Elementos CSS</h2>
-    </main>
+    </section>
+
+    <section id="sinalizador-important">
+        <h2>Sinalizador <span class="nome-elemento">!important</span></h2>
+        <div class="elemento">
+            <div class="atributos">
+                <div class="descricao">
+                    <h3>O que é?</h3>
+                    <p>É uma diretiva que ao ser adicionada ao final de uma declaração de propriedade, ele eleva essa
+                        declaração ao topo da cascata faznedo com que anule qualquer outra declaração para a mesma
+                        propriedade.</p>
+                </div>
+            </div>
+            <div class="quando-usar">
+                <p class="span-negrito"> Exemplo: </p>
+                <p> Você utiliza quando quiser deixar aquela propriedade acima de qualquer outra, ma o uso é perigoso e
+                    deve ser evitado.</p>
+                <div class="exemplo">
+                    <code>
+                    &nbsp;p &lbrace;<br>
+                    &nbsp;&nbsp;color: red !important;<br>
+                    &nbsp;&rbrace;
+                    </code>
+                </div>
+                <p> Seu resultado vai ser um parágrafo sempre vermelho independe se vier outra declaração colocando
+                    roxo, por exemplo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
